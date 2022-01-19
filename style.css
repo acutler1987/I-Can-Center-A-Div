@@ -1,0 +1,27 @@
+body {
+	background-color: yellow;
+}
+
+#headertext {
+	text-align: center;
+}
+
+#divone {
+	background-color: skyblue;
+	margin: auto;
+}
+
+#divtwo {
+	background-color: greenyellow;
+	margin: 50px 0px 50px 0px;
+}
+
+#divthree {
+	background-color: tomato;
+}
+
+.centereddivs {
+	border: 5px solid black;
+	height: 100px;
+	width: 200px;
+}
