@@ -1,9 +1,13 @@
 body {
 	background-color: yellow;
+	position: relative;
 }
 
 #headertext {
 	text-align: center;
+}
+
+#div-one-container {
 }
 
 #divone {
@@ -11,9 +15,22 @@ body {
 	margin: auto;
 }
 
+#div-two-container {
+	position: relative;
+}
+
 #divtwo {
 	background-color: greenyellow;
-	margin: 50px 0px 50px 0px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#div-three-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #divthree {
@@ -24,4 +41,8 @@ body {
 	border: 5px solid black;
 	height: 100px;
 	width: 200px;
+}
+
+.div-text {
+	margin: auto;
 }
