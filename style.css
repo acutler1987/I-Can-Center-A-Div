@@ -8,6 +8,7 @@ body {
 }
 
 #div-one-container {
+	margin: auto;
 }
 
 #divone {
@@ -17,6 +18,7 @@ body {
 
 #div-two-container {
 	position: relative;
+	margin-top: 10%;
 }
 
 #divtwo {
@@ -31,6 +33,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 20%;
 }
 
 #divthree {
@@ -44,5 +47,6 @@ body {
 }
 
 .div-text {
-	margin: auto;
+	font-size: 25px;
+	text-align: center;
 }
