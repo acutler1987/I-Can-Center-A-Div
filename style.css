@@ -13,17 +13,41 @@ body {
 }
 
 #div-one-container {
+	margin-bottom: 2%;
 	grid-row-start: 1;
 	grid-row-end: 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	transition: 0.5s ease-in-out;
+}
+
+#div-one-container:hover #divone {
+	transform: translate(-50%, 0%);
+}
+
+#div-one-container:hover #textone {
+	transform: translate(50%, 0%);
 }
 
 #divone {
 	background-color: skyblue;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
 	margin: auto;
+	transition: 0.5s ease-in-out;
 	z-index: 2;
 }
 
 #textone {
+	height: 110px;
+	width: 210px;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
 	margin: auto;
 	z-index: 1;
 }
@@ -31,6 +55,18 @@ body {
 #div-two-container {
 	grid-row-start: 2;
 	grid-row-end: 3;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	transition: 0.5s ease-in-out;
+}
+
+#div-two-container:hover #divtwo {
+	transform: translate(-100%, -50%);
+}
+
+#div-two-container:hover #texttwo {
+	transform: translate(50%, 0%);
 }
 
 #divtwo {
@@ -40,38 +76,71 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	transition: 0.5s ease-in-out;
+}
+
+#divtwo:hover {
+	margin-right: 400px;
 }
 
 #texttwo {
+	height: 110px;
+	width: 210px;
 	margin: auto;
 	z-index: 1;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
 }
 
 #div-three-container {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	margin-top: 2%;
 	grid-row-start: 3;
 	grid-row-end: 4;
+	transition: 0.5s ease-in-out;
+}
+
+#div-three-container:hover #divthree {
+	margin-right: 200px;
+}
+
+#div-three-container:hover #textthree {
+	margin-left: 200px;
 }
 
 #divthree {
 	background-color: tomato;
-	margin-left: 25%;
+	position: absolute;
+	transition: 0.5s ease-in-out;
 	z-index: 2;
 }
 
 #textthree {
+	height: 110px;
+	width: 210px;
 	z-index: 1;
 }
 
 .centereddivs {
 	border: 5px solid black;
-	height: 100px;
-	width: 200px;
+	height: 110px;
+	width: 210px;
 }
 
 .div-text {
 	font-size: 25px;
 	text-align: center;
+}
+
+.div-text-under {
+	font-size: 25px;
+	text-align: center;
+	transition: 0.5s ease-in-out;
 }
